@@ -8,7 +8,9 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-
+pool:
+  name: Default
+  demands: SpecialSoftware # exists check for SpecialSoftware
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
